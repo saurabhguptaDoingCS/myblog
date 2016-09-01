@@ -1,0 +1,12 @@
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<div><%= truncate(post.body,:length => 35) %></div>
+<br>
+<%= link_to "Read Post", post %>
+<% end %>
+
+ <!--  <h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<%= link_to "New Post", new_post_path %>
+clikc to this will take you to page /posts/new page because it is the URI for new_post.-->

@@ -1,0 +1,20 @@
+<%# THis page is rendering all other html pages developed by us in itself. The rendering happens using yield command %>
+<%# %>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "Home", root_path %>
+<%= link_to "New Post", new_post_path %>  
+<br>
+helloooo
+<%= yield %>
+
+</body>
+</html>
